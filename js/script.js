@@ -8,9 +8,9 @@ new Vue(
         },
         created() { // un evento particolare, dove l'applicazione vue non è stata ancora mostrata ma è stata caricata
             
-            axios.get('https://flynn.boolean.careers/exercises/api/array/music')
+            axios.get('http://localhost:80/php-ajax-dischi/backend/api.php')
                 .then((response) => {
-                    this.discs = response.data;
+                    this.discs = response;
             })   
 
         }

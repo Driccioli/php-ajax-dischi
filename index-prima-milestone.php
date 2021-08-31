@@ -40,7 +40,7 @@ Attraverso un’altra chiamata api, filtrare gli album per genere
 
         require_once __DIR__ . "/database/database.php";
 
-        foreach($database as $album) {
+        foreach($discs as $album) {
             echo "<div class='col-2 pt-2 pb-2 album'>
                     <img src='{$album['poster']}'>
                     <h4>{$album['title']}</h4>

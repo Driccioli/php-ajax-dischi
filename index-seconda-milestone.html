@@ -41,10 +41,10 @@ Attraverso un’altra chiamata api, filtrare gli album per genere
 <body>
 
     <div id="app">
-        <div class="container-fluid">
-            <div class="container spotify">
-                <div class="row justify-content-center  flex-wrap"> 
-                    <div class="col-3 pt-2 pb-2 album" v-for="disc in discs.data.response">
+        <div class="container-fluid  spotify">
+            <div class="container">
+                <div class="row p-3 justify-content-center flex-wrap"> 
+                    <div class="col-3 pt-5 pb-2 album" v-for="disc in discs.data">
                         <img :src="disc.poster" alt="Poster">
                         <h4 class="pt-2">{{disc.title}}</h4>
                         <span>{{disc.author}}, {{disc.year}}</span>
