@@ -6,5 +6,10 @@
 }
 
 .album > img{
-    max-width: 150px;
+    width: 150px;
+    height: 150px;
+}
+
+.spotify{
+    background-color: #1E2D3B;
 }
